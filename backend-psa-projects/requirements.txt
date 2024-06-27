@@ -1,0 +1,7 @@
+uvicorn
+fastapi
+sqlalchemy
+pytest
+pytest-bdd
+psycopg2
+requests
