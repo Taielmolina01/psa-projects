@@ -1,7 +1,9 @@
 # psa-projects
 
 Este es el trabajo grupal de la materia de Analisis de la Información - Ingeniería de Software, curso Villagra, 1C2024.
+
 En él se fue durante todo el cuatrimestre realizando ingeniería de requisitos para poder desarrollar la aplicación.
+
 Tanto los docentes como alumnos hemos jugado una especia de role-play, siendo ellos los product owner/product manager y demás roles de la empresa PSA, y nosotros unos desarrolladores tercerizados a los cuáles se les ha encargado realizar un MVP de la app.
 
 [Web App](https://frontend-psa.vercel.app/)
