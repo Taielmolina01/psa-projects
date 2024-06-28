@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T19:02:13.328Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="UjE9OLdOHSHr_en4VAGW" version="24.6.2" type="google">
+<mxfile host="app.diagrams.net" modified="2024-06-28T02:35:40.042Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="6wYjHzQ1d5VLr4fh8wtM" version="24.6.4" type="google">
   <diagram name="Página-1" id="ArcO9KK-ic6tBFZU1gsl">
     <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="DZ9hWg5SR_Lmfd-wREUk-1" value="Proyectos" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="195" width="140" height="90" as="geometry" />
+          <mxGeometry x="480" y="160" width="140" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-2" value="&lt;div&gt;Nombre {id}&lt;/div&gt;&lt;div&gt;Lider&lt;/div&gt;&lt;div&gt;Estado&lt;/div&gt;&lt;div&gt;Fecha tentativa de fin&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-1">
-          <mxGeometry y="30" width="140" height="60" as="geometry" />
+        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-2" value="&lt;div&gt;Nombre&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Estado&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Horas estimadas&lt;/div&gt;&lt;div&gt;Fecha inicio&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fecha tentativa de fin&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-1">
+          <mxGeometry y="30" width="140" height="100" as="geometry" />
         </mxCell>
         <mxCell id="DZ9hWg5SR_Lmfd-wREUk-7" value="Tareas" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="697" y="190" width="120" height="100" as="geometry" />
+          <mxGeometry x="700" y="160" width="120" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-8" value="Requisitos&lt;div&gt;Encargado&lt;/div&gt;&lt;div&gt;Estado&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-7">
-          <mxGeometry y="30" width="120" height="70" as="geometry" />
+        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-8" value="Nombre&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Fecha inicio&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fecha fin&lt;/div&gt;&lt;div&gt;Estado&lt;/div&gt;&lt;div&gt;Prioridad&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-7">
+          <mxGeometry y="30" width="120" height="90" as="geometry" />
         </mxCell>
         <mxCell id="DZ9hWg5SR_Lmfd-wREUk-17" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="DZ9hWg5SR_Lmfd-wREUk-7" target="DZ9hWg5SR_Lmfd-wREUk-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -54,27 +54,6 @@
         </mxCell>
         <mxCell id="DZ9hWg5SR_Lmfd-wREUk-32" value="Nombre" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-31">
           <mxGeometry y="30" width="140" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-33" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="DZ9hWg5SR_Lmfd-wREUk-29" target="DZ9hWg5SR_Lmfd-wREUk-1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="360" y="310" as="sourcePoint" />
-            <mxPoint x="410" y="260" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-34" value="Tienen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-33">
-          <mxGeometry x="-0.1276" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-35" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-33">
-          <mxGeometry x="0.7437" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="DZ9hWg5SR_Lmfd-wREUk-36" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="DZ9hWg5SR_Lmfd-wREUk-33">
-          <mxGeometry x="-0.7598" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="DZ9hWg5SR_Lmfd-wREUk-37" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" source="DZ9hWg5SR_Lmfd-wREUk-31" target="DZ9hWg5SR_Lmfd-wREUk-29">
           <mxGeometry width="50" height="50" relative="1" as="geometry">

@@ -9,9 +9,6 @@ from typing import List
 
 router = APIRouter()
 
-class ProjectResponse(BaseModel):
-    projects: List[Project]
-
 @router.post("/projects")
 async def create_project(project: Project,
                          db: Session = Depends(get_database)):
@@ -22,7 +19,7 @@ async def create_project(project: Project,
     except ProjectHaveNotLeader as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=e.message)
     except LeaderProjectNotRegistered as e:
-        raise HTTPException(status_code=status.HTTP_404_BAD_REQUEST, detail=e.message)
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=e.message)
     except StateOfProjectIsNotValid as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=e.message)
     except ProjectHaveNotStartDate as e:
@@ -59,7 +56,7 @@ async def update_project(project_id: int,
     except ProjectHaveNotLeader as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=e.message)
     except LeaderProjectNotRegistered as e:
-        raise HTTPException(status_code=status.HTTP_404_BAD_REQUEST, detail=e.message)
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=e.message)
     except StateOfProjectIsNotValid as e:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=e.message)
     except ProjectHaveNotStartDate as e:
@@ -80,6 +77,8 @@ async def update_state_project(project_id: int,
         return ProjectService(db).update_state_project(project_id, new_state)
     except ProjectNotFound as e:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=e.message)
+    except StateOfProjectIsNotValid as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=e.message)
 
 
 @router.delete("/projects/{project_id}", status_code=204)
@@ -88,4 +87,4 @@ async def delete_project(project_id: int,
     try:
         ProjectService(db).delete_project(project_id)
     except ProjectNotFound as e:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=e.message)
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=e.message)
