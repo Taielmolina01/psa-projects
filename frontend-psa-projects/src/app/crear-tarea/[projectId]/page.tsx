@@ -48,24 +48,24 @@ export default function createTask({
         },
         body: JSON.stringify(json),
       });
+
+      if (!res.ok) {
+        const data = await res.json();
+        if (res.status == 422) {
+          setError("Ingresar una fecha válida");
+        } else if (res.status == 400) {
+          setError(data.detail);
+        } else {
+          setError("Error desconocido");
+        }
+        return;
+      } 
+
+      router.push(`/proyectos/${projectId}`);
+
     } catch (e) {
       setError("Error de conexión");
       return;
-    }
-
-    if (!res.ok) {
-      const data = await res.json();
-      if (res.status == 422) {
-        setError("Ingresar una fecha válida");
-      } else if (res.status == 400) {
-        setError(data.detail);
-      } else {
-        setError("Error desconocido");
-      }
-      return;
-    }
-
-    router.push(`/proyectos/${projectId}`);
   };
 
   useEffect(() => {

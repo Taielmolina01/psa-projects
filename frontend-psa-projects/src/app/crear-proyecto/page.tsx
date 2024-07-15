@@ -39,22 +39,23 @@ export default function createProject() {
         },
         body: JSON.stringify(json),
       });
+
+      if (!res.ok) {
+        const data = await res.json();
+        if (res.status == 422) {
+          setError("Ingresar una fecha válida");
+        } else if (res.status == 400) {
+          setError(data.detail);
+        } else {
+          setError("Error desconocido");
+        }
+        return;
+      }
+
       const data = await res.json();
       router.push("/proyectos/" + data.project_id);
     } catch (e) {
       setError("Error de conexión");
-      return;
-    }
-
-    if (!res.ok) {
-      const data = await res.json();
-      if (res.status == 422) {
-        setError("Ingresar una fecha válida");
-      } else if (res.status == 400) {
-        setError(data.detail);
-      } else {
-        setError("Error desconocido");
-      }
       return;
     }
   };
