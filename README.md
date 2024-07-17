@@ -1,6 +1,6 @@
 # psa-projects
 
-Este es el trabajo grupal de la materia de Analisis de la Información - Ingeniería de Software, curso Villagra, 1C2024.
+Este es el trabajo grupal de la materia de Analisis de la Información - Ingeniería de Software I, curso Villagra, 1C2024.
 
 En él se fue durante todo el cuatrimestre realizando ingeniería de requisitos para poder desarrollar la aplicación.
 
