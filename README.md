@@ -31,4 +31,4 @@ En ella está el análisis que se ha realizado durante todo el cuatrimestre para
 
 ## Aclaración
 
-La web app contaba también con el desarrollo de otro módulo el cual fue hecho por otro grupo con el cual trabajamos en conjunto, cuyo backend fue desarrollado en Java pero el repositorio es privado.
+La web app contaba también con el desarrollo de otro módulo el cual fue hecho por otro grupo con el que trabajamos en conjunto, cuyo backend fue desarrollado en Java pero el repositorio es privado.
