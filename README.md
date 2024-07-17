@@ -10,6 +10,15 @@ Tanto los docentes como alumnos hemos jugado una especia de role-play, siendo el
 
 Tener en cuenta que el backend se encuentra en render y suele costar unos minutos que sea devuelto por el servidor.
 
+UPDATE: el backend está caído, se puede probar la webapp a nivel local de todas formas.
+
+### Grupo
+
+- [Batemarco, Joaquin](https://github.com/BA73C0)
+- [Lijs, Theo](https://github.com/LijsTh)
+- [Lorenzo, Luciano](https://github.com/LuchoLorenzo1)
+- [Molina, Taiel](https://github.com/Taielmolina01)
+  
 ## Tecnologías
 
 Para el backend utilizamos Python con el framework fastapi.
